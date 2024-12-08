@@ -2,11 +2,19 @@
   "name": "blog-marshal-tut",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "type": "module",
+  "browser list": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome check src",
+    "format": "biome check --write",
+    "git": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.11.1",
