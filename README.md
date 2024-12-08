@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BlogMarshal
+
+**BlogMarshal** is a comprehensive blogging platform built with modern web technologies, including Next.js 15, Kinde Auth, Supabase, Prisma, Stripe, and Tailwind CSS. It is designed to enable users to create, manage, and monetize their blogs effectively. The project is inspired by the course [Create a SaaS using Next.js 15, Kinde Auth, Supabase, Prisma, Stripe, and Tailwind CSS](https://janmarshal.com/courses/create-a-saa-s-using-next-js-15-kinde-auth-supabase-prisma-stripe-and-tailwind-css).
+
+## Features
+
+- **User Authentication**: Secure login and registration using Kinde Auth.
+- **Blog Management**: Create, edit, and manage blog posts with an intuitive editor.
+- **Subscription Model**: Monetize blogs with Stripe payment integration.
+- **Database Management**: Data persistence and management powered by Supabase and Prisma.
+- **Responsive Design**: Tailwind CSS for a fully responsive and beautiful user interface.
+- **SaaS Architecture**: Built to scale and support multiple users with role-based access.
+
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Authentication**: [Kinde Auth](https://kinde.com/)
+- **Database**: [Supabase](https://supabase.com/), [Prisma](https://www.prisma.io/)
+- **Payment**: [Stripe](https://stripe.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have the following installed on your local development machine:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (>= 18.x)
+- Yarn or npm
+- A Supabase account
+- A Kinde account
+- A Stripe account
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/ski043/BlogMarshal.git
+   cd BlogMarshal
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Create a `.env` file and add your Supabase and Kinde API keys:
 
-## Deploy on Vercel
+   ```bash
+   cp .env.example .env
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   yarn dev
+   ```
+
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+### Scripts
+
+- dev: Starts the development server.
+- build: Builds the application for production.
+- start: Starts the production server.
+- lint: Runs linters and checks for code style violations.
+- prismaStudio: Starts Prisma Studio for database management.
+
+### Deployment
+
+The application can be easily deployed to [Vercel](https://vercel.com/):
+
+  1. Connect your repository to Vercel.
+  2. Add the necessary environment variables in the Vercel dashboard.
+  3. Deploy the application.
+
+### Contributing
+
+We welcome contributions to the project. Please follow the [Contributing Guidelines](https://github.com/ski043/BlogMarshal/blob/main/CONTRIBUTING.md).
+
+### License
+
+This project is licensed under the [MIT License](https://github.com/ski043/BlogMarshal/blob/main/LICENSE).
