@@ -19,5 +19,21 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "cSpell.words": ["Kinde", "mydb", "sonner", "Supabase", "uploadthing", "utfs"]
+  "cSpell.words": [
+    "autoincrement",
+    "datasource",
+    "dropcursor",
+    "gapcursor",
+    "Kinde",
+    "mydb",
+    "pgbouncer",
+    "pooler",
+    "sonner",
+    "sslmode",
+    "Supabase",
+    "uploadthing",
+    "utfs",
+    "xata",
+    "zuquwpwrzlfxcbgntdvu"
+  ]
 }

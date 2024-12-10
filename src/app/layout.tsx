@@ -29,7 +29,7 @@ export default function RootLayout({
     <AuthProvider>
       <html lang="en" suppressHydrationWarning>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} h-screen w-screen antialiased`}
+          className={`${geistSans.className} ${geistMono.className} h-screen w-screen antialiased`}
         >
           <ThemeProvider
             attribute="class"
