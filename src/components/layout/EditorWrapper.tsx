@@ -1,5 +1,7 @@
 "use client";
 
+import { slashCommand, suggestionItems } from "@/lib/utils/SlashCommand";
+import { defaultExtensions } from "@/lib/utils/extensions";
 import {
   EditorCommand,
   EditorCommandEmpty,
@@ -9,8 +11,6 @@ import {
   EditorRoot,
   type JSONContent,
 } from "novel";
-import { defaultExtensions } from "@/lib/utils/extensions";
-import { slashCommand, suggestionItems } from "@/lib/utils/SlashCommand";
 import { handleCommandNavigation } from "novel/extensions";
 
 interface EditorProps {
